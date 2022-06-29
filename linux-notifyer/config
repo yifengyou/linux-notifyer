@@ -1,0 +1,29 @@
+[DEFAULT]
+
+# dingding settings
+dingding_secret = SEC9d3c70d73a5954e9bcee9413f03ca3f4e24c5eaeb1462af7c2639919d9564bc8
+dingding_webhook = https://oapi.dingtalk.com/robot/send?access_token=b015523c5706073a1fbed5bc8171d5012a7d36b90b587091a6dfe3453e5532f9
+
+# retry
+retry_times = 3
+
+# target git repo
+git_repository = git@github.com:torvalds/linux.git
+git_branch = master
+git_directory = /home/linux.git/
+
+# target directory
+watch = ./net/bpf
+    ./drivers/net/ethernet/netronome/nfp/bpf
+    ./security/bpf
+    ./samples/bpf
+    ./tools/lib/bpf
+    ./tools/testing/selftests/net/bpf
+    ./tools/testing/selftests/bpf
+    ./tools/bpf
+    ./tools/perf/include/bpf
+    ./tools/perf/examples/bpf
+    ./Documentation/bpf
+    ./kernel/bpf
+    ./
+
